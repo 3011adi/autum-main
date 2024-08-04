@@ -10,14 +10,14 @@ const Nav = () => {
   };
 
   return (
-    <nav className="bg-white  bg-opacity-50 fixed  border-gray-200 xl:rounded-3xl xl:w-3/4 sm:w-[425px] sm:rounded-xl ">
-      <div className="flex flex-wrap items-center justify-between mx-auto px-2">
-        <a href="#abt " className="flex items-center space-x-3 ">
-        <img src={myImage1} alt="Description of image" style={{ width: '100px', height: '100px' }} className='' />
+    <nav className="bg-white  bg-opacity-50 fixed  border-gray-200 xl:rounded-3xl xl:w-3/4 sm:w-9/10 sm:rounded-xl ">
+      <div className="flex flex-wrap items-center justify-between mx-auto px-2 ">
+        <a href="#abt " className="flex items-center xl:space-x-3 ">
+        <img src={myImage1} alt="Description of image"  className='xl:w-[100px] sm:w-[80px]' />
           <span class="self-center text-3xl font-semibold ">AUTUMN</span>
         </a>
-        <button onClick={toggleMenu} type="button" class="inline-flex items-center p-1 justify-center   rounded-lg xl:hidden   focus:outline-none focus:ring-2 ">
-        <img src={menu} alt="Description of image" style={{ width: '80px', height: '80px' }} />
+        <button onClick={toggleMenu} type="button" class="inline-flex items-center p-1 justify-center   rounded-lg xl:hidden    ">
+        <img src={menu} alt="Description of image" className='xl:w-[80px] ml-12  sm:w-[60px]' />
           
         </button>
         <div class={`xl:block ${isOpen ? 'block' : 'hidden'} w-full xl:w-auto `}>

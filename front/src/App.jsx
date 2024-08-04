@@ -5,8 +5,6 @@ import Nav from './components/Nav';
 import { gsap } from 'gsap';
 import myImage from '/Users/adi/Desktop/aut/front/public/images/Group 1.png';
 import myImage1 from '/Users/adi/Desktop/aut/front/public/images/Group 1.png';
-import myimage2 from'/Users/adi/Desktop/aut/front/public/images/group1.jpeg';
-import myimage3 from'/Users/adi/Desktop/aut/front/public/images/int.jpg';
 import myimg4 from '/Users/adi/Desktop/aut/front/public/images/24.jpeg';
 import myimg5 from '/Users/adi/Desktop/aut/front/public/images/2.jpeg' ;
 import myimg6 from '/Users/adi/Desktop/aut/front/public/images/3.jpeg' ;
@@ -14,6 +12,7 @@ import myimg7 from '/Users/adi/Desktop/aut/front/public/images/4.jpeg' ;
 import myimg8 from '/Users/adi/Desktop/aut/front/public/images/5.jpeg' ;
 import myimg9 from '/Users/adi/Desktop/aut/front/public/images/6.jpeg';
 import arrow from '/Users/adi/Desktop/aut/front/public/images/Arrow up-circle.png';
+
 export default function App() {
   const boxRef2 = useRef(null);
   const boxRef1 = useRef(null);
@@ -22,15 +21,15 @@ export default function App() {
     
     gsap.fromTo(boxRef2.current, 
       { x: -900 }, // Initial state
-      { x: 30, duration: 2 } // Final state and duration
+      { x: 40, duration: 2 } // Final state and duration
     );
     gsap.to(boxRef1.current, { rotation: 360, duration: 2 });
     gsap.to(boxRef3.current, { scale: 1.8, duration: 2});
 
   }, []);
   return (
-    <div className="">
-      <div className="absolute z-10 w-full m-2  sm:pt-0 flex justify-center  bg-gradient-to-r from-black to-gray-600 ">
+    <div className="w-full">
+      <div className="w-full absolute z-30  sm:pt-0 flex justify-center  bg-gradient-to-r from-black to-gray-600 ">
           <Nav />
         </div>
         
@@ -38,15 +37,15 @@ export default function App() {
      <section className=" bg-gradient-to-r from-black to-gray-600 min-h-screen flex items-center xl:flex-row sm:flex-col sm:justify-center " id='home'>
      <div ref={boxRef2} className=''>
       <a href='#how'>
-       <div className="  grid grid-cols-2  xl:space-x-8 sm:space-x-11 sm:pb-10 xl:p-0   ">
+       <div className="  grid grid-cols-2  xl:space-x-8 sm:space-x-8 sm:pb-10 xl:p-0   ">
     <div className=" row-span-2 flex justify-center">
       <h1 className="  sm:text-6xl xl:text-9xl -px-6 text-white font-sans   ">AUTUMN</h1>
     </div>
     <div className=" xl:py-2 xl:w-1/2 flex justify-start items-center">
-  <h1 className="xl:text-5xl sm:text-2xl text-white font-sans">D E S I I G N</h1>
+  <h1 className="xl:text-5xl sm:text-xl text-white font-sans">D E S I I G N</h1>
 </div>
     <div className=" xl:w-1/2 sm:w-full flex justify-start align-middle">
-      <h1 className="xl:text-5xl sm:text-2xl text-white font-sans">S T U D I O</h1>
+      <h1 className="xl:text-5xl sm:text-xl text-white font-sans">S T U D I O</h1>
     </div >
     
   </div>
@@ -58,7 +57,7 @@ export default function App() {
     </div>
 
    
-  <div className='flex xl:justify-end sm:justify-center sm:pt-24 xl:p-0'>
+  <div className='flex xl:justify-end sm:justify-center  sm:pt-24 xl:p-0'>
   <div ref={boxRef3} className=' mx-6'>
     <img src={myImage} alt="Description of image" className='xl:w-[450px]  sm:w-[200px]' />
     <h1 className='text-center text-slate-500 xl:text-lg sm:text-sm '> A Venture of Autumn Interiors</h1>
@@ -70,7 +69,7 @@ export default function App() {
  <h1 className='  text-6xl text-white font-thin py-6  sm:text-center xl:text-start ' > Product & Services</h1>
 <div className='min-h-[50vh]  flex  sm:flex-col xl:flex-row space-x-4 py-2'>
  
-  <div className=' xl:w-1/5  text-center text-xl bg-white  grid sm:grid-cols-2 xl:grid-cols-1 bg-opacity-40 rounded-lg'>
+  <div className=' xl:w-1/5  sm:w-9.5 text-center text-xl bg-white  grid sm:grid-cols-2 xl:grid-cols-1 bg-opacity-40 rounded-lg'>
     
     <h1>Turn Key Projects</h1>
     <h1>sofa</h1>
@@ -84,12 +83,12 @@ export default function App() {
     <h1>sofa</h1>
     
   </div>
-  <div className='xl:w-4/5   rounded-lg border-emerald-700 overflow-x-auto whitespace-nowrap space-x-3 sm:py-4'>
+  <div className='xl:w-4/5  sm:w-9.5  rounded-lg border-emerald-700 overflow-x-auto whitespace-nowrap space-x-3 sm:py-4'>
   <img src={myimg9} alt="Description of image1" style={{ width: '450px', height: '450px' }} className="inline-block rounded-xl" />
   <img src={myimg9} alt="Description of image1" style={{ width: '450px', height: '450px' }} className="inline-block rounded-xl" />
   <img src={myimg9} alt="Description of image1" style={{ width: '450px', height: '450px' }} className="inline-block rounded-xl" />
   <img src={myimg9} alt="Description of image1" style={{ width: '450px', height: '450px' }} className="inline-block rounded-xl" />
-  {/* Add more images as needed */}
+
 </div>
 </div>
 </section>
@@ -97,7 +96,7 @@ export default function App() {
 <section className='bg-slate-500 p-6 ' id='how'>
   <h1 className='text-6xl px-2 py-5 text-white font-serif text-center'>HOW IT WORKS ?</h1>
   <div className='flex justify-center py-6'>
-  <div className='grid xl:grid-cols-3 gap-3  sm:gap-9 xl:w-3/4 sm:w-full'>
+  <div className='grid xl:grid-cols-3 sm:grid-cols-2  gap-3  sm:gap-3 xl:w-3/4 sm:w-full'>
   <div className=' p-3 flex flex-col justify-center items-center border-2 rounded-lg hover:shadow-2xl hover:shadow-white'>
   <img src={myimg4} alt="Description of image" className="w-full h-auto object-cover" />
   <h1 className='text-center text-xl  text-white pt-16'>MEET & DESIGN</h1> <p1>Site Information <br />  Personal Requirements <br />Preferences theme</p1></div>
@@ -131,7 +130,7 @@ export default function App() {
 <section className='bg-[#958f8c] h-auto xl:p-24 sm:p-16' id='prod'>
   <h1 className='text-center text-6xl text-white font-thin pb-12'>product gallery</h1>
   <div className='flex justify-center items-center h-auto '>
-    <Carousel className='xl:w-[500px] sm:w-[380px] '>
+    <Carousel className='xl:w-[500px] sm:w-[300px] ' autoPlay>
       <div>
         <img src={myimg9} className="h-auto max-w-full rounded-lg object-cover object-center" alt=""/>
       </div>
