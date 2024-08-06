@@ -2,16 +2,17 @@ import React, { useEffect, useRef } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Nav from './components/Nav';
-import { gsap } from 'gsap';
-import myImage from '/Users/adi/Desktop/aut/front/public/images/Group 1.png';
-import myImage1 from '/Users/adi/Desktop/aut/front/public/images/Group 1.png';
-import myimg4 from '/Users/adi/Desktop/aut/front/public/images/24.jpeg';
-import myimg5 from '/Users/adi/Desktop/aut/front/public/images/2.jpeg' ;
-import myimg6 from '/Users/adi/Desktop/aut/front/public/images/3.jpeg' ;
-import myimg7 from '/Users/adi/Desktop/aut/front/public/images/4.jpeg' ;
-import myimg8 from '/Users/adi/Desktop/aut/front/public/images/5.jpeg' ;
-import myimg9 from '/Users/adi/Desktop/aut/front/public/images/6.jpeg';
-import arrow from '/Users/adi/Desktop/aut/front/public/images/Arrow up-circle.png';
+import { gsap } from 'gsap';``
+
+import myImage from '/images/Group 1.png';
+import myImage1 from '/images/Group 1.png';
+import myimg4 from '/images/24.jpeg';
+import myimg5 from '/images/2.jpeg' ;
+import myimg6 from '/images/3.jpeg' ;
+import myimg7 from '/images/4.jpeg' ;
+import myimg8 from '/images/5.jpeg' ;
+import myimg9 from '/images/6.jpeg';
+import arrow from '/public/images/Arrow up-circle.png';
 
 export default function App() {
   const boxRef2 = useRef(null);
