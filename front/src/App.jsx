@@ -12,7 +12,7 @@ import myimg6 from '/images/3.jpeg' ;
 import myimg7 from '/images/4.jpeg' ;
 import myimg8 from '/images/5.jpeg' ;
 import myimg9 from '/images/6.jpeg';
-import arrow from '/public/images/Arrow up-circle.png';
+import arrow from '/images/Arrow up-circle.png';
 
 export default function App() {
   const boxRef2 = useRef(null);

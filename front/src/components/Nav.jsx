@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import myImage1 from '/Users/adi/Desktop/aut/front/public/images/Group 1.png';
-import menu from '/Users/adi/Desktop/aut/front/public/images/menu.png';
+import myImage1 from '/images/Group 1.png';
+import menu from '/images/menu.png';
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
 
